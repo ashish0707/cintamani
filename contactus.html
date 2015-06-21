@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>:: Happinest :: Project</title>
+<link rel="stylesheet" href="everything/style.css">
+<link rel="stylesheet" href="everything/jcarousel.css">
+<link rel="stylesheet" href="everything/hp-featured.css">
+<style>
+/*.lof-snleft .lof-navigator .active{
+		background:url(images/fl-arrow-btn.png) 0 0 no-repeat !important;
+		position:relative;
+		z-index:999 !important;
+		border:1px solid #FFF;
+	}*/
+
+.lof-snleft .lof-navigator li div {
+	margin-left: inherit;/*margin-left:18px;*/
+}
+.lof-snleft .lof-navigator li.active div {
+	margin-left: inherit;
+	/*margin-left:18px;*/
+	background: url(images/fl-arrow-btn.png) 0 0 no-repeat;
+}
+ul.lof-main-wapper li {
+	position: relative;
+}
+</style>
+<script type="text/javascript" src="everything/jquery.js"></script>
+<script type="text/javascript" src="everything/jquery_002.js"></script>
+<script type="text/javascript" src="everything/jquery_003.js"></script>
+<script type="text/javascript" src="everything/jcarousel.js"></script>
+<script type="text/javascript" src="everything/script.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+});
+</script>
+
+<!--<script type="text/javascript" src="js/accordian.pack.js"></script>onload="new Accordian('basic-accordian',5,'header_highlight');"-->
+</head>
+
+<body>
+<div id="logohold"> <a href="http://www.happinest.co.in/index.html"><img src="everything/happy-logo.jpg" class="logo" height="81" width="164"></a> 
+<!--<img src="images/contactno.jpg" width="169" height="81" class="contactno" />-->
+<div class="lang-btn-hold">
+<a href="#" class="english-btn-select"></a>
+<a href="http://happinest.co.in/tamil/" target="_blank" class="tamil-btn"></a>
+</div>
+</div>
+<div id="navhold"> <a href="http://www.happinest.co.in/index.html" class="home-btn"><img src="everything/white-home-icon.png" height="30" width="38"></a>
+  <div id="menuhold">
+    <div class="menu">
+      <ul class="dropdown">
+        <li><a href="http://www.happinest.co.in/aboutus.html" class="mainlink">about us</a></li>
+                <li><a href="http://www.happinest.co.in/project.html" class="mainlink">projects</a>
+                	<ul class="sub_menu">
+                        <li><a href="http://www.happinest.co.in/boisar-project-overview.html">Boisar (Mumbai)</a></li>
+                        <li><a href="http://www.happinest.co.in/project.html">Avadi (Chennai)</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://www.happinest.co.in/faqs.html" class="mainlink">faqs</a></li>
+                <li><a href="http://www.happinest.co.in/boisar-contactus.html" class="mainlink selected">contact us</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div id="midcont-inner-holder">
+<div id="slider-holder">
+  <div class="jcarousel-wrapper">
+    <div data-jcarousel="true" class="jcarousel-project">
+      <ul style="left: 0px; top: 0px;">
+        <li><img src="everything/aboutus-head.jpg" alt="" height="246" width="910"></li>
+        <!--<li><img src="images/projects/02.jpg" width="910" height="246" alt=""></li>
+        <li><img src="images/projects/03.jpg" width="910" height="246" alt=""></li>
+        <li><img src="images/projects/04.jpg" width="910" height="246" alt=""></li>-->
+      </ul>
+    </div>
+    <p data-jcarouselpagination="true" class="jcarousel-pagination" style="display:none;"><a class="active" href="#1">1</a></p>
+  </div>
+</div>
+<!--<br class="cl" />
+<div id="breadcrumshold"> <a href="#" class="breadcrum-text">home</a> <span><img src="images/arrow-breadcrum.jpg" /></span> <a href="#" class="breadcrum-text active">projects</a> <span><img src="images/arrow-breadcrum.jpg" /></span> <a href="#" class="breadcrum-text-active">overview</a> </div>-->
+<br class="cl">
+<div id="hp-conthold">
+    <div style="background:url(images/hp-featuredcont-bg.jpg) repeat-x; float:left; width:890px; margin:0; padding:10px; font-size:15px; color:#FFF; text-transform:uppercase; ">contact us</div>
+    <div class="tab_container" style="margin-bottom:20px;">    
+    <div style="display:block; width:300px; float:left;">
+   	  <h2 style="font-size:16px; color:#333; margin:20px 0 0 30px; padding:0; clear:all; width:100%">Happinest, Boisar</h2>
+    	<p class="terms">Mahindra  Lifespace Developers Ltd.,<br>
+    	  Plot CTS No. 50/1,<br>
+          Near Eklavya Highschool<br>
+    	  Kambalgaon, Betegaon Off Road,<br>
+   	    Boisar [East] – 401 501 
+        
+       <!-- <strong >Contact Us on<br />
+        18004199190</strong> -->
+        </p>
+        
+        <h2 style="font-size:14px; color:#333; float:left; margin:10px 0 3px 30px; padding:0; clear:all; width:100%">Toll Free </h2>
+        <h2 style="font-size:13px; color:#333; float:left; margin:0 0 0 30px; padding:0; clear:all; width:100%; line-height:18px">1800-102-3455</h2>
+    </div>
+    <div style="display:block; width:300px; float:left;">
+    	<h2 style="font-size:16px; color:#333; margin:20px 0 0 30px; padding:0; clear:all; width:100%">Happinest, Avadi</h2>
+    	<p class="terms">
+    	  Paruthipattu,<br>
+    	  Off Poonamallee Avadi High Road,<br>
+    	  Avadi,<br>
+   	    Chennai – 600 071 
+        
+       <!-- <strong >Contact Us on<br />
+        18004199190</strong> -->
+        <br>
+    	</p>
+        
+        <h2 style="font-size:14px; color:#333; float:left; margin:10px 0 3px 30px; padding:0; clear:all; width:100%">Toll Free</h2>
+        <h2 style="font-size:13px; color:#333; float:left; margin:0 0 0 30px; padding:0; clear:all; width:100%;line-height:18px">1800-419-9190</h2>
+    </div>
+        
+  </div>
+</div>
+<div class="cl"></div>
+<div id="footer-hold">
+  <div id="footer">
+    <ul>
+      <!--<li><a href="#">Media</a></li>-->
+      <li><a href="http://www.happinest.co.in/sitemap.html">Sitemap</a></li>
+      <li><a href="http://www.happinest.co.in/privacypolicy.html">Privacy Policy</a></li>
+      <li><a href="http://www.happinest.co.in/disclaimer.html">Disclaimer</a></li>
+      <li><a href="http://www.mahindra.com/" target="_blank">Mahindra Rise</a></li>
+      <li><a href="http://www.mahindralifespaces.com/" target="_blank">Mahindra Lifespaces</a></li>
+    </ul>
+    <p class="copyright"> © 2014 | M &amp; M Group. All rights reserved.</p>
+  </div>
+</div>
+<script type="text/javascript" src="everything/jquery-1.js" charset="utf-8"></script>
+<script type="text/javascript" src="everything/jquery_004.js"></script> 
+<script type="text/javascript">
+            $('#example1, #example3').accordion();
+            $('#example2').accordion({
+                canToggle: true
+            });
+            $('#example4').accordion({
+                canToggle: true,
+                canOpenMultiple: true
+            });
+            $(".loading").removeClass("loading");
+        </script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-51967505-1', 'happinest.co.in');
+  ga('send', 'pageview');
+
+</script>
+
+
+</div></body></html>
