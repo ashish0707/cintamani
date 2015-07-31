@@ -22,6 +22,25 @@ font-family: 'Open Sans', sans-serif;
 	background-size: cover;
 	min-height: 750px;
 }
+/* banner */
+.bannerSection {
+	/*float: left;*/
+	width: 100%;overflow: hidden;
+}
+#bannerSlider.flexslider {
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	margin: 0 0 00px;
+}
+
+#bannerSlider .flex-control-nav {
+	bottom: 0px;
+	z-index: 2;
+	display: none;
+}
+
+/* /banner */
 .logo{
 	margin-bottom:1em;
 }
@@ -54,7 +73,7 @@ font-family: 'Open Sans', sans-serif;
 }
 .nav ul {
     list-style: none;
-	width: 13em;
+	width: 10em;
 	border-bottom:5px solid #0072bc;
 	z-index:888;
 }
@@ -91,8 +110,8 @@ font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 }
 .nav > li.hover > ul {
-    left:-1px;
-    top:38px;
+    left:11px;
+    top:23px;
 }
 .nav li li.hover ul {
     left: 100%;
@@ -129,10 +148,14 @@ font-family: 'Open Sans', sans-serif;
 }
 .nav li li a{
 	text-transform: capitalize;
-	font-size:0.85em;
-	border-bottom: 1px solid #e8ebf1;
+	font-size:0.8em;
+	font-weight: 400;
+	padding: 10px 10px;
+    margin: 0;
+    text-align: left;
+	/*border-bottom: 1px solid #e8ebf1;
 	border-left: 1px solid #e8ebf1;
-	border-right: 1px solid #e8ebf1;
+	border-right: 1px solid #e8ebf1;*/
 }
 .nav li li a:hover{
 	-webkit-transform: rotateY(15deg);
@@ -168,6 +191,40 @@ font-family: 'Open Sans', sans-serif;
 	left:0;
 	background:#272727;
 }
+
+/* second level */
+
+#nav li ul
+{
+	background-color: #cc470d;
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav li:hover ul
+{
+	display: block;
+	left: 0;
+	right: 0;
+}
+#nav li:not( :first-child ):hover ul
+{
+	left: -1px;
+}
+#nav li ul a
+{
+	font-size: 1.25em; /* 20 */
+	border-top: 1px solid #e15a1f;
+	padding: 0.75em; /* 15 (20) */
+}
+#nav li ul li a:hover,
+#nav li ul:not( :hover ) li.active a
+{
+	background-color: #e15a1f;
+}
+
+
+
 /***** Media Quries *****/
 @media screen and (max-width: 768px) {
 	.h_logo4{
@@ -258,18 +315,22 @@ font-family: 'Open Sans', sans-serif;
 }
 .banner-top {
 	padding: 50px 0px 0px 0px;
+    position: absolute;
+    top: 5%;
+    z-index: 9;
 }
 .banner-top h2 {
   font-size: 20px;
-  color: #fff;
+  color: #333333;
   font-weight: 700;
   width: 39%;
   text-transform: uppercase;
 }
 .banner-top h1 {
 	font-size: 23px;
-	color: #fff;
-	font-weight: 800;
+	color: #333333;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
 	margin: 0px 0px 15px 0px;
 	text-transform: uppercase;
 }
@@ -306,22 +367,22 @@ a.bann-bwn-arr:hover {
  -o-transition:  0.5s all;
 }
 .banner-top ul {
-  padding: 0px 0px 350px 0px;
+  padding: 0px 0px 200px 0px;
   list-style: none;
   float: right;
 }
 .banner-top ul li p {
-	font-size: 19px;
-	font-weight: 300;
-	color: #fff;
-	line-height: 1.5em;
+	font-size: 21px;
+    font-weight: 600;
+    color: #444444;
+    line-height: 1.5em;
 }
 @media(max-width:1024px){
 .banner {
 	min-height: 570px;
 }	
 .banner-top ul {
-	padding: 0px 0px 180px 0px;
+	padding: 0px 0px 75px 0px;
 }
 a.bann-bwn-arr {
 	background: url(../images/bwn-arr.png)no-repeat #BD49A8 250px 18px;
@@ -346,7 +407,7 @@ a.bann-bwn-arr:hover {
 	padding: 65px 0px 0px 50px;
 }
 .banner-top ul {
-	padding: 0px 0px 100px 0px;
+	padding: 0px 0px 55px 0px;
 }	
 .banner {
 	min-height: 500px;
@@ -360,13 +421,13 @@ a.bann-bwn-arr:hover {
 }
 @media(max-width:640px){
 .banner-top {
-	padding: 50px 0px 0px 0px;
+	padding: 2px 0px 0px 0px;
 }	
 .banner {
 	min-height: 430px;
 }
 .banner-top ul {
-	padding: 0px 0px 85px 0px;
+	padding: 0px 0px 10px 0px;
 }
 .banner-bwn {
 	margin: 33px 0px 0px 0px;
@@ -384,11 +445,11 @@ a.bann-bwn-arr:hover {
 	font-size: 15px;	
 }
 .banner-top h1 {
-	font-size: 21px;
+	font-size: 14px;
 }
 .banner-top h2 {
 	width: 80%;
-	font-size: 16px;
+	font-size: 12px;
 }
 a.bann-bwn-arr {
 	background: url(../images/bwn-arr.png)no-repeat #BD49A8 170px 13px;
@@ -438,7 +499,7 @@ a.bann-bwn-arr:hover {
 	padding: 1px 0px 0px 0px;
 }
 .banner-top ul {
-  padding: 0px 0px 30px 0px;
+  padding: 0px 0px 7px 0px;
 }
 .banner-bwn {
   margin: 20px 0px 0px 0px;
@@ -455,14 +516,14 @@ a.bann-bwn-arr:hover {
 .art-grid h3 {
   font-size: 1.5em;
   font-weight: 600;
-  color: #fff;
+  color: #000000;
   margin: 0em 0em 0.2em 0em;
   padding: 4em 0em 0em 0em;
 }
 .art-grid p {
   font-size: 0.91em;
   font-weight: 400;
-  color: #fff;
+  color: #000000;
 }
 .art1 {
   background: url(../images/a1.jpg)no-repeat;
@@ -1065,7 +1126,7 @@ a.bann-bwn-arr:hover {
 	z-index: 1;
 }
 span.white {
-	color: #000;
+	color: #ffffff;
 }
 .punches-left p {
 	font-size: 13px;
