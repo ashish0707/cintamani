@@ -152,7 +152,7 @@ font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	padding: 10px 10px;
     margin: 0;
-    text-align: left;
+    text-align: center;
 	/*border-bottom: 1px solid #e8ebf1;
 	border-left: 1px solid #e8ebf1;
 	border-right: 1px solid #e8ebf1;*/
@@ -223,6 +223,15 @@ font-family: 'Open Sans', sans-serif;
 	background-color: #e15a1f;
 }
 
+.chintamani-heights-banner {
+	background: url(../images/banner-3.jpg)no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 660px;
+	padding: 0px;
+}
 
 
 /***** Media Quries *****/
@@ -632,9 +641,9 @@ a.bann-bwn-arr:hover {
 	font-size: 17px;
 	font-weight: 400;
 	color: #000;
-	width: 58%;
+	width: 100%;
 	line-height: 1.7em;
-	margin: 200px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
 }
 .about-img {
 	position: absolute;
@@ -1118,29 +1127,29 @@ a.bann-bwn-arr:hover {
 	min-height: 450px;
 }
 .punches-left h3 {
-	font-size: 17px;
+	font-size: 21px;
 	font-weight: 400;
 	color: #fff;
-	padding: 118px 12px 20px 0px;
+	padding: 65px 12px 20px 0px;
 	text-transform: uppercase;
 	text-align: right;
-	width: 60%;
+	width: 51%;
 	position: absolute;
 	background: #BD49A8;
 	top: 20%;
-	left: 12%;
+	left: 0%;
 	z-index: 1;
 }
 span.white {
 	color: #ffffff;
 }
 .punches-left p {
-	font-size: 13px;
+	font-size: 14px;
 	font-weight: 400;
 	color: #fff;
-	width: 44%;
+	width: 50%;
 	line-height: 1.7em;
-	padding: 295px 0px 0px 0px;
+	padding: 255px 0px 0px 0px;
 }
 @media(max-width:1024px){
 .punches-top {
@@ -1532,7 +1541,7 @@ span.close-quolan {
 /*--laying out start here--*/
 .laying-left {
 	min-height: 630px;
-	padding: 140px 15px 0px 15px;
+	padding: 78px 15px 0px 15px;
 	text-align: center;
 }
 .laying-right {
@@ -1552,15 +1561,15 @@ span.close-quolan {
 	font-size: 19px;
 	font-weight: 400;
 	color: #5A5A5A;
-	padding: 150px 20px 0px 0px;
-	text-align: right;
+	padding: 25px 20px 0px 15px;
+	text-align: left;
 }
 .laying-left p {
 	font-size: 15px;
 	font-weight: 400;
 	color: #000;
 	line-height: 1.7em;
-	text-align: right;
+	text-align: left;
 	padding: 25px 20px 0px 0px;
 }
 .laying-right h3 {
@@ -1571,6 +1580,7 @@ span.close-quolan {
 	padding: 90px 0px 0px 30px;
 	text-transform: uppercase;
 }
+.laying-left .col-md-12 h3 {padding-left: 0;}
 .laying-right p {
 	font-size: 35px;
 	font-weight: 300;
@@ -1710,7 +1720,7 @@ span.close-quolan {
 	padding: 10px 0px 0px 10px;
 }
 .laying-left h4 a {
-  font-size: 2em;
+  font-size: 1.5em;
 }
 }
 /*--laying out end here--*/
