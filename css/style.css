@@ -225,10 +225,14 @@ font-family: 'Open Sans', sans-serif;
 
 .chintamani-heights-banner {
 	background: url(../images/chintamani-heights-banner.jpg)no-repeat;
-	-webkit-background-size: cover;
+	/*-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover;
+	background-size: cover;*/
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
 	min-height: 660px;
 	padding: 0px;
 }
@@ -1036,6 +1040,17 @@ a.bann-bwn-arr:hover {
 	padding: 280px 0px 0px 0px;
 	text-transform: uppercase;
 }
+.measuring {
+    width: 50%;
+    background: #BD49A8;
+    padding: 0px 18px;
+    text-align: center;
+    border: 12px solid #fff;
+    position: absolute;
+    top: 27%;
+    right: 19%;
+    z-index: 1;
+}
 @media(max-width:1024px){
 	
 }
@@ -1110,13 +1125,22 @@ a.bann-bwn-arr:hover {
 	width: 100%;
 }
 .creative-top {
-	width: 50%;
-	top: 61%;
-	right: 27%;
+    width: 75%;
+    top: 60%;
+    right: 13%;
 }
 .creative-right {
   min-height: 160px;
 }
+.laying-right {
+	-webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    min-height: 160px;
+}
+
+
 }
 /*--Creative end here--*/
 /*--punch start here--*/
@@ -1563,6 +1587,7 @@ span.close-quolan {
 }
 .laying-right {
 	background: #BD49A8;
+	background: url(../images/measuring-layout.jpg)no-repeat;
 	min-height: 630px;
 }
 .laying-left h4 a {
@@ -1581,29 +1606,29 @@ span.close-quolan {
 	padding: 25px 20px 0px 15px;
 	text-align: left;
 }
-.laying-left p {
-	font-size: 15px;
-	font-weight: 400;
-	color: #000;
-	line-height: 1.7em;
-	text-align: left;
-	padding: 25px 20px 0px 0px;
+.laying-right p {
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+    width: 100%;
+    padding: 10px 0px 23px 10px;
+    text-transform: uppercase;
 }
 .laying-right h3 {
-	font-size: 43px;
-	font-weight: 700;
-	width: 80%;
-	color: #fff;
-	padding: 90px 0px 0px 30px;
-	text-transform: uppercase;
+    font-size: 23px;
+    font-weight: 700;
+    width: 100%;
+    color: #fff;
+    padding: 30px 0px 0px 5px;
+    text-transform: uppercase;
 }
 .laying-left .col-md-12 h3 {padding-left: 0;}
 .laying-right p {
-	font-size: 35px;
+	font-size: 22px;
 	font-weight: 300;
 	color: #fff;
-	width: 85%;
-	padding: 60px 0px 0px 30px;
+	width: 90%;
+	padding: 0px 0px 20px 30px;
 	text-transform: uppercase;
 }
 @media(max-width:1024px){
