@@ -327,14 +327,14 @@ font-family: 'Open Sans', sans-serif;
 	float: left;
 }
 .bann-head {
-	left: 7%;
+	left: 1%;
     position: absolute;
 }
 .banner-top {
 	padding: 50px 0px 0px 0px;
     position: absolute;
-    top: 5%;
-    right: 10%;
+    top: 0;
+    right: 5%;
     width: 90%;
     z-index: 9;
 }
@@ -343,6 +343,7 @@ font-family: 'Open Sans', sans-serif;
   color: #333333;
   font-weight: 700;
   width: 39%;
+  margin-top: 30px;
   text-transform: uppercase;
 }
 .banner-top h1 {
@@ -350,7 +351,7 @@ font-family: 'Open Sans', sans-serif;
 	color: #333333;
 	font-weight: 700;
 	font-family: 'Open Sans', sans-serif;
-	margin: 0px 0px 15px 0px;
+	margin: 140px 0px 15px 0px;
 	text-transform: uppercase;
 }
 .logo {
@@ -367,7 +368,7 @@ font-family: 'Open Sans', sans-serif;
 	padding: 15px 0px 0px 0px;
 }
 .banner-bwn {
-	margin: 45px 0px 0px 0px;
+	margin: 50px 0px 0px 0px;
 }
 a.bann-bwn-arr {
 	background: url(../images/bwn-arr.png)no-repeat #BD49A8 305px 20px;
@@ -1798,7 +1799,7 @@ span.close-quolan {
 	width: 40%;
 	position: absolute;
 	top: 12%;
-	left: 15%;
+	left: 12%;
 	z-index: 1;
 	border: 20px solid #BD49A8;
 }
